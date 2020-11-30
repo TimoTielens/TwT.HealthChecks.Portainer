@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <Authors>Timo Tielens</Authors>
+    <Company>Timo Tielens bv.</Company>
+    <Copyright>Copyright 2020 Timo Tielens</Copyright>
+    <PackageProjectUrl>https://github.com/TimoTielens/TwT.HealthChecks.Portainer</PackageProjectUrl>
+    <PackageTags>Health Portainer HealthChecks TwT</PackageTags>
+    <NeutralLanguage />
+    <Description>This health check add-on checks the state of the a Portainer service</Description>
+    <LangVersion>8</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="5.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
